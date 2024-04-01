@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Screen</title>
+    <link href="{% static 'style.css' %}" rel="stylesheet">
+</head>
+<body>
+    <h1 class="title">황금카드 뽑기 (단돈 3코인)</h1>
+
+    <div class="card-container">
+        <div class="card-content">
+            <div class="card-front">
+                <img id="card-image" src="{% static 'image.PNG' %}" alt="Golden Card Front">
+            </div>
+            <div class="card-back">
+                <h3 class="card-title"></h3>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <button type="button" id="draw-card-button">카드 뽑기</button>
+        <button type="button" id="reset-button">초기화</button>
+    </div>
+
+    <script src="{% static 'main.js' %}"></script>
+</body>
+</html>

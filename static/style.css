@@ -36,3 +36,14 @@
     text-align: center;
     z-index: 2;
 }
+
+.title {
+    text-align: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* 버튼들과 제목 사이의 간격 조정 */
+}
+
